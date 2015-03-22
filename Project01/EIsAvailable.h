@@ -1,0 +1,5 @@
+enum EIsAvailable{
+
+		FREE,
+		USED,
+};

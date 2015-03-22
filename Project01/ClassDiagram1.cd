@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Mesh" Collapsed="true">
+    <Position X="5.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAAAAAAAAAAAAAAIAAABAAAAAAAAAAQAAAAAAAgA=</HashCode>
+      <FileName>Mesh.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameObject">
+    <Position X="5.5" Y="1.5" Width="1.5" />
+    <Members>
+      <Field Name="name_this" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAEAAAAAAAIAIAIAAAIEAAA=</HashCode>
+      <FileName>GameObject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CubeObjectTest" Collapsed="true">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAIAAAAAAAAEAAA=</HashCode>
+      <FileName>CubeObjectTest.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TransformNode" Collapsed="true">
+    <Position X="7.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BEAAICEAARBAIwAAgAAYAAAigIAgAEQCEBQFAAhgFEA=</HashCode>
+      <FileName>TransformNode.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RootTransformNode" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAAAAQAAIAAAAAAAEA=</HashCode>
+      <FileName>RootTransformNode.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MovableObject" Collapsed="true">
+    <Position X="9.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAQAAAAAAAAAQAAAiAAAgAEACEAABAAAABAA=</HashCode>
+      <FileName>MovableObject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RigidBody" Collapsed="true">
+    <Position X="3.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RigidBody.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameStateManager">
+    <Position X="20" Y="2" Width="1.75" />
+    <Members>
+      <Method Name="~GameStateManager" Hidden="true" />
+      <Method Name="GameStateManager" Hidden="true" />
+      <Method Name="get_currentGameState" Hidden="true" />
+      <Method Name="getInstance" Hidden="true" />
+      <Field Name="p_instance" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>BABAAAAAAgAAAAAAAIAAAAAAAAAAAAYQEAAAABAEAEA=</HashCode>
+      <FileName>GameStateManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameState">
+    <Position X="22.5" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="GameState" Hidden="true" />
+      <Method Name="get_name" Hidden="true" />
+      <Field Name="name" Hidden="true" />
+      <Field Name="vector_of_game_object" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAIAAAAAAAAAEAAIAAAAAAIAEIAA=</HashCode>
+      <FileName>GameState.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SceneManager">
+    <Position X="14.25" Y="3.5" Width="1.5" />
+    <Members>
+      <Method Name="~SceneManager" Hidden="true" />
+      <Method Name="getInstance" Hidden="true" />
+      <Method Name="getRootTransformNode" Hidden="true" />
+      <Method Name="getTexture" Hidden="true" />
+      <Method Name="LoadGLTextures" Hidden="true" />
+      <Method Name="Quit" Hidden="true" />
+      <Method Name="SceneManager" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAQCAAAAAAAIAkAAQIAQAIAAIAAAQgQAAgAAAAAAAUQ=</HashCode>
+      <FileName>SceneManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Root">
+    <Position X="14.75" Y="0.75" Width="1.5" />
+    <Members>
+      <Method Name="~Root" Hidden="true" />
+      <Method Name="getInstance" Hidden="true" />
+      <Method Name="Root" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>EIAAAAACAAAACCAAAEAAAAAAAAAIAAYAAAQAAAIAAEA=</HashCode>
+      <FileName>Root.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InputManager">
+    <Position X="12.5" Y="3.5" Width="1.5" />
+    <Members>
+      <Method Name="~InputManager" Hidden="true" />
+      <Method Name="getInstance" Hidden="true" />
+      <Method Name="InputManager" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="InputManager::SIGNAL" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>InputManager.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAACAAAAAAAAAAAAAAUoAADAIAAAAAg=</HashCode>
+      <FileName>InputManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameLoop">
+    <Position X="16" Y="3.5" Width="1.5" />
+    <Members>
+      <Method Name="createFrameListener" Hidden="true" />
+      <Method Name="gameLoop" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAEAAABAAACAAAAAAAgAAAMAAAAAAAABAAAAAAAAIAA=</HashCode>
+      <FileName>GameLoop.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GamePlay_02">
+    <Position X="24.25" Y="3" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ACAABAAAIAAAAAAAQAAQAIAAKgAEAAbIECCAOMQEAAA=</HashCode>
+      <FileName>GamePlay_02.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="EGameObject">
+    <Position X="24.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>EGameObject.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>
